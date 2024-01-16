@@ -5,7 +5,7 @@
 1. Create a private github repository based on [this template](https://github.com/encord-team/backend-assignment), either on github.com or using the [Github CLI](https://cli.github.com/):
 
    ```
-   gh repo create encord-be-assignment --private --template encord-team/backend-assignment
+   gh repo create encord-be-assignment --clone --private --template encord-team/backend-assignment
    ```
 
 1. Write a solution to the challenge described below. Your program will be invoked from a command line, taking its input from STDIN and writing its output to STDOUT:
