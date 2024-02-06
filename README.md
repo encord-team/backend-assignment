@@ -11,7 +11,11 @@
 1. Write a solution to the challenge described below. Your program will be invoked from a command line, taking its input from STDIN and writing its output to STDOUT:
 
    ```bash
-   $ ./tetris < input.txt > output.txt
+   $ ./tetris
+   Q0,Q0
+   4
+   Q0,Q2
+   2
    ```
 
 1. Once you are finished, compress your solution and send it by email to engineering-interviewers@encord.com.
@@ -22,9 +26,9 @@ You are to write a simplified Tetris engine.
 The engine should model a grid that pieces enter from top and come to rest at the bottom, as if pulled down by gravity. Each piece is made up of four unit squares.
 No two unit squares can occupy the same space in the grid at the same time.
 The pieces are rigid, and come to rest as soon as any part of a piece contacts the bottom of the grid or any resting block. As in Tetris, whenever an entire row of the grid is filled, it disappears, and any higher rows drop into the vacated space without any change to the internal pattern of blocks in any row.
-Your program must process a text file of lines each representing a sequence of pieces entering the grid.
-For each line of the input file, your program should output the resulting height of the remaining blocks within the grid.
-The file denotes the different possible shapes by letter. The letters used are Q, Z, S, T, I, L, and J. The shapes of the pieces they represent are shown in the table below:
+Your program must process multiple lines each representing a sequence of pieces entering the grid.
+For each line of the input file, your program should output the resulting height of the remaining blocks within the grid. COnsider the fgr
+The letters used are Q, Z, S, T, I, L, and J. The shapes of the pieces they represent are shown in the table below:
 
 </td>
 </tr>
@@ -92,15 +96,14 @@ Your program does not need to validate its input and can assume that there will 
 You do not have to account for shape rotation in your model. The pieces will always have the orientations shown above.
 Each line of the input file is a comma-separated list.
 Each entry in the list is a single letter (from the set above) and a single-digit integer. The integer represents the left-most column of the grid that the shape occupies, starting from zero.
-The grid of the game space is 10 units wide. For each line of the file, the grid’s initial state is empty.
-
-For example, if the input file consisted of the line “Q0” the corresponding line in the output file would be “2”, since the block will drop to the bottom of the initially empty grid and has height two.
+For example, if the input consisted of the line “Q0” the corresponding line in the output would be “2”, since the block will drop to the bottom of the initially empty grid and has height two.
+The grid of the game space is 10 units wide. The grid’s initial state is empty.
 
 ## Examples
 
 ### Example 1
 
-A line in the input file contains `I0,I4,Q8` resulting in the following configuration:
+A line in the input is `I0,I4,Q8` resulting in the following configuration:
 
 ```
   I0 │          │ I4  │          │ Q8  │          │
@@ -125,7 +128,7 @@ Therefore, the output row for this sequence is “1”.
 
 ### Example 2
 
-A line in the input file contains `T1,Z3,I4`.
+A line in the input contains `T1,Z3,I4`.
 
 ```
 
