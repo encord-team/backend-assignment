@@ -27,7 +27,7 @@ The engine should model a grid that pieces enter from top and come to rest at th
 No two unit squares can occupy the same space in the grid at the same time.
 The pieces are rigid, and come to rest as soon as any part of a piece contacts the bottom of the grid or any resting block. As in Tetris, whenever an entire row of the grid is filled, it disappears, and any higher rows drop into the vacated space without any change to the internal pattern of blocks in any row.
 Your program must process multiple lines each representing a sequence of pieces entering the grid.
-For each line of the input file, your program should output the resulting height of the remaining blocks within the grid. COnsider the fgr
+For each line of the input file, your program should output the resulting height of the remaining blocks within the grid. Consider the fgr
 The letters used are Q, Z, S, T, I, L, and J. The shapes of the pieces they represent are shown in the table below:
 
 </td>
@@ -142,6 +142,8 @@ A line in the input contains `T1,Z3,I4`.
 ```
 
 No rows are filled, so the output for this sequence is “4”.
+
+More examples are available in file `input.txt`
 
 ## Evaluation criteria
 
