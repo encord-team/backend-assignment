@@ -8,7 +8,7 @@
    gh repo create encord-be-assignment --clone --private --template encord-team/backend-assignment
    ```
 
-1. Write a solution to the challenge described below in the language of your choice.
+1. Write a solution to the challenge described below in a language of your choice as long as it is reasonably common.
 
 1. Once you are finished, compress your solution and send it by email to engineering-interviewers@encord.com.
 
