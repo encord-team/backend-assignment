@@ -19,7 +19,7 @@ The engine should model a grid that pieces enter from top and come to rest at th
 The pieces are rigid, and come to rest as soon as any part of a piece contacts the bottom of the grid or any resting block. As in Tetris, whenever an entire row of the grid is filled, it disappears, and any higher rows drop into the vacated space without any change to the internal pattern of blocks in any row.
 
 The requirements are as follows:
-- Your program must process multiple lines each representing a sequence of pieces entering the grid. Each line of the input file is a comma-separated list of letters. Each entry in the list is a single letter and a single-digit integer, representing the shape and the left-most column index in which it enters the grid. For each line, your program should output the resulting height of the remaining blocks within the grid. 
+- Your program must process multiple lines each representing a sequence of pieces entering the grid. Each line of the input is a comma-separated list of letters. Each entry in the list is a single letter and a single-digit integer, representing the shape and the left-most column index in which it enters the grid. For each line, your program should output the resulting height of the remaining blocks within the grid. 
 - Your program will be invoked from a command line, taking its input from STDIN and writing its output to STDOUT, for example:
 
    ```bash
