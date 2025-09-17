@@ -98,7 +98,7 @@ The following assumptions are made:
 - Your program does not need to validate its input and can assume that there will be no illegal characters. 
 - The pieces will always have the orientations shown above.
 - The grid of the game space is 10 units wide.
-- The grid’s initial state is empty.
+- The grid’s initial state at the beginning of each line of input is empty.
 
 ## Examples
 
